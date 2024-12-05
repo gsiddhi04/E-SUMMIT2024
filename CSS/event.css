@@ -1,0 +1,49 @@
+     /* Parent container */
+     .parent {
+        display: flex;                /* Arrange child boxes in a row */        justify-content: center;      /* Center the child boxes horizontally */
+        justify-content: space-evenly;
+        align-items: center;          /* Center the child boxes vertically */
+        gap: 2%;                      /* Space between the circles */
+        flex-wrap: wrap;              /* Allow wrapping for smaller screens */
+        padding: 1rem;
+      }
+      
+      /* Child circles */
+      .child {
+        width: 15vw;                  /* Responsive width */
+        height: 15vw;                 /* Match height to width for a circle */
+        max-width: 150px;             /* Set a maximum size */
+        max-height: 150px;            /* Set a maximum size */
+        min-width: 50px;              /* Set a minimum size */
+        min-height: 50px;             /* Set a minimum size */
+        border-radius: 50%;           /* Makes the shape circular */
+        display: flex;                /* Center any potential content inside */
+        justify-content: center;      /* Center horizontally */
+        align-items: center;          /* Center vertically */
+        transition: transform 0.3s;  /* Smooth scaling on hover */
+        font-size: 20px;
+        font-weight: 900;
+      }
+      
+      /* Individual styling for each circle */
+      .child1 {
+        background-color: #e74c3c;    /* Red */
+      }
+      .child2 {
+        background-color: #2ecc71;    /* Green */
+      }
+      .child3 {
+        background-color: #f1c40f;    /* Yellow */
+      }
+      
+      /* Hover effect */
+      .child:hover {
+        transform: scale(1.1);        /* Slightly enlarge the circle */
+      }
+      
+      @media screen and (min-width: 446px) {
+        .child{
+            font-size: 2.5rem;
+        }
+        
+      }

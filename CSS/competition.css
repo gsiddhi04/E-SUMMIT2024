@@ -1,0 +1,124 @@
+/* 
+==========
+Competition
+========== */
+#competition{
+  background-color: black;
+}
+#competition .competition_card{
+  background-color: #50455B;
+  overflow: hidden ;
+
+}
+.competition_img_cover{
+  display: flex;
+  align-items: center; 
+}
+
+#competition .buttonContainer{
+  border: 1px solid red;
+}
+
+
+/* screen */
+
+#screen{
+    background-color: #750cff;
+}
+.competition_card_container{
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  height: 50vh; 
+}
+
+.competition_image{
+  flex: 1;
+  height: 49%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+    
+}
+
+.competition_image img{
+ 
+  width: 50%;
+  height: 50%;
+
+    
+}
+
+
+.competition_description{
+flex: 1;
+height: 49;
+}
+
+
+
+
+/* Style the button container */
+#buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Center buttons in container */
+    margin: 20px 0;
+  }
+  
+  /* Style individual buttons */
+  .dynamic-button {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px; /* Equal width */
+    height: 100px; /* Equal height */
+    background-color: #430945; /* Light background */
+    border: 1px solid #ccc; /* Border for visibility */
+    border-radius: 8px; /* Optional: Rounded corners */
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.9rem; /* Adjust text size */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Add hover effect to buttons */
+  .dynamic-button:hover {
+    background-color: #750cff;
+    color: white;
+  }
+  
+  .competition_card_container{
+    display: flex;
+  }
+  /* Style the image inside the button */
+
+  /* Responsive design for buttons */
+  @media screen and (min-width:556px) {
+    .competition_card_container{
+      padding: 2px;
+      display: flex;
+      flex-direction: row;
+      height: 50vh; 
+    }
+    
+.competition_image{
+  
+  width: 49%;
+  height: 100%;
+    
+}
+    .competition_description{
+      flex: 1;
+      width: 49;
+      height: 1005;
+      }
+      
+  }
+
+  

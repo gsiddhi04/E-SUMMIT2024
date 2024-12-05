@@ -1,0 +1,35 @@
+{
+    "sections": [
+      {
+        "button": "DECRYPT",
+        "image": "DD.png",
+        "description": "Description for Button 1"
+      },
+      {
+        "button": "beAnAngel",
+        "image": "BAA.svg",
+        "description": "Description for Button 2"
+      },
+      {
+        "button": "crypto",
+        "image": "CC.svg",
+        "description": "Description for Button 3"
+      },
+      {
+        "button": "MUC",
+        "image": "MUC.svg",
+        "description": "Description for Button 4"
+      },
+      {
+        "button": "Sell_Your_Sole",
+        "image": "SYS.svg",
+        "description": "Description for Button 5"
+      },
+      {
+        "button": "upstart_campus",
+        "image": "UC.svg",
+        "description": "Description for Button 6"
+      }
+    ]
+  }
+  
