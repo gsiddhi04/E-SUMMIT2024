@@ -3,32 +3,32 @@
       {
         "button": "DECRYPT",
         "image": "DD.png",
-        "description": "Description for Button 1"
+        "description": "Ignite your entrepreneurial spirit with Decrypt, the ultimate case study competition. Dive into real-world challenges, make tough decisions, and embark on an exhilarating journey of problem-solving!"
       },
       {
         "button": "beAnAngel",
         "image": "BAA.svg",
-        "description": "Description for Button 2"
+        "description": "Experience the investor's perspective in Be an Angel:Shark Tank Edition. Role-play as an Angel Investor with $5 million to invest. Assess startups, pitch investment strategies, and face VC judges. Understand both sides of the table in this nerve-wracking pitch competition."
       },
       {
         "button": "crypto",
         "image": "CC.svg",
-        "description": "Description for Button 3"
+        "description": "Get ready to ride the CryptoCraze wave, a thrilling virtual crypto trading competition where fortune favors the boldest! Seize control of your financial destiny and showcase your trading prowess. Dive into the undiscovered realms of the entrepreneurial world!"
       },
       {
         "button": "MUC",
         "image": "MUC.svg",
-        "description": "Description for Button 4"
+        "description": "Unlock the thrill of corporate leadership! Join Model United Corporations and immerse yourself in the world of CEOs, CMOs, and CFOs. Conquer high-pressure decision-making, strategic challenges, and teamwork. Sharpen your skills, seize the spotlight, and prove you've got what it takes to lead in the boardroom. Join the competition, transform into a corporate titan!"
       },
       {
         "button": "Sell_Your_Sole",
         "image": "SYS.svg",
-        "description": "Description for Button 5"
+        "description": "Prepare to unleash your marketing genius in the Sell Your Sole competition! Step into the shoes of a CMO and craft a game-changing marketing campaign for an existing brand. It's your chance to redefine success!"
       },
       {
         "button": "upstart_campus",
         "image": "UC.svg",
-        "description": "Description for Button 6"
+        "description": "The classic pitching competition that showcases one's ability to ideate and pitch in front of judges from the across entrepreneurship world. Get the experience of being in the shoes of real life entrepreneur and learn what 'The Art of the Pitch' is all about."
       }
     ]
   }

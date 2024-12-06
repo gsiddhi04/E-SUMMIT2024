@@ -55,6 +55,14 @@ Competition
 .competition_description{
 flex: 1;
 height: 49;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.competition_description p{
+  width: 80%;
+  text-align: left;
+  font-size: var();
 }
 
 
