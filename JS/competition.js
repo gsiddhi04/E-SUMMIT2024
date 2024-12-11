@@ -42,7 +42,7 @@ function displayContent(screen, description, section) {
 
 
   screen.innerHTML = `<img src="./images/competition_main/${section.image}" alt="${section.button}">`;
-    description.innerHTML = `<p>${section.description}</p><a href="${section.link}"><button >Read More</button></a>
+    description.innerHTML = `<p>${section.description}</p><a href="${section.link}"><button class ="realistic-button" >Read More</button></a>
 `;
 }
 
