@@ -1,22 +1,20 @@
      /* Parent container */
      .days{
-        position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
         position: absolute;
-        z-index: 200;
-        bottom: 10px; 
-        right: 10px;  
+        z-index: 2000;
+        top: 70%; 
+        left: 10%;  
 
 
      }
      .days_parent {
         display: flex; 
-        flex-direction: column;        
         justify-content: center;   
         justify-content: space-evenly;
         align-items: center;         
-        gap: 10px;                     
+        gap: 20px;                     
         flex-wrap: wrap;             
         position: relative;
         left: 40%;
@@ -24,15 +22,15 @@
       
       /* Child circles */
       .days_child {
-                      
-        min-width: 50px;            
-        min-height: 50px;           
+        min-width: 40px;            
+        min-height: 40px;           
         border-radius: 50%;          
         justify-content: center;     
         align-items: center;         
         transition: transform 0.3s;  
         font-size: 1rem;
         font-weight: 900;
+       
       }
       
       .days_child{
@@ -40,16 +38,59 @@
         display: flex;
         text-align: center;
         align-items: center;
+        background-color: transparent; 
+        position: relative; 
+
+
       }
-      .days_child1 {
-        background-color: #e74c3c;   
-      }
-      .days_child2 {
-        background-color: #2ecc71;   
-      }
-      .days_child3 {
-        background-color: #f1c40f;   
-      }
+
+
+      
+      .days_child::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 7px; /* Adjust padding for border thickness */
+  background: conic-gradient(from 360deg at 50% 50%, #F714D7 0deg, #7C1866 180deg);;
+  -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+  mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  animation: rotate 3s linear infinite;
+
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+.days_child1::after,.days_child2::after,.days_child3::after {
+  content: attr(days-target) ;
+  position: absolute; /* Positions it relative to .days_child */
+  bottom: -20px; /* Adjusts the position below the div */
+  left: 50%; /* Centers the text horizontally */
+  transform: translateX(-50%); /* Corrects alignment */
+  font-size: 0.8rem; /* Adjusts font size for "days" */
+  font-weight: normal; /* Optional: set font weight for the pseudo-element */
+  color: #fefefe; /* Adjust the color as needed */
+}
+
+      
       
       /* Hover effect */
       .days_child:hover {
@@ -61,13 +102,57 @@
         writing-mode: vertical-rl;
         text-orientation: upright;
         color: white;
+        display: flex;
+        justify-content: center;
         padding: 0;
+        
         text-align:right;
          }
       @media screen and (min-width: 446px) {
-        .days_child{
-            width: 50px;
-            height: 50px;
-            font-size: 1.5rem;
+        .days{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          position: fixed;
+          z-index: 2000;
+          top: 50%; 
+          left: 90%;  
+  
+  
+       }
+       .days_parent {
+          display: flex;
+          flex-direction: column; 
+          justify-content: center;   
+          justify-content: space-evenly;
+          align-items: center;         
+          gap: 20px;                     
+          flex-wrap: wrap;             
+          position: relative;
+          left: 40%;
         }
+        
+        /* Child circles */
+        .days_child {
+          min-width: 50px;            
+          min-height: 50px;           
+          border-radius: 50%;          
+          justify-content: center;     
+          align-items: center;         
+          transition: transform 0.3s;  
+          font-size: 1rem;
+          font-weight: 900;
+         
+        }
+        
+        .days_child{
+          color: white;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          background-color: transparent; 
+          position: relative; 
+  
+  
+        }
+        
       }

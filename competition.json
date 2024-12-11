@@ -2,33 +2,57 @@
     "sections": [
       {
         "button": "DECRYPT",
-        "image": "DD.png",
-        "description": "Ignite your entrepreneurial spirit with Decrypt, the ultimate case study competition. Dive into real-world challenges, make tough decisions, and embark on an exhilarating journey of problem-solving!"
+        "image": "DD.svg",
+        "description": "Ignite your entrepreneurial spirit with Decrypt, the ultimate case study competition. Dive into real-world challenges, make tough decisions, and embark on an exhilarating journey of problem-solving!",
+        "imageUrl":"DD_bg.jpg",
+        "link": "./competitions_pages/comp1.html"
+        
       },
       {
         "button": "beAnAngel",
         "image": "BAA.svg",
-        "description": "Experience the investor's perspective in Be an Angel:Shark Tank Edition. Role-play as an Angel Investor with $5 million to invest. Assess startups, pitch investment strategies, and face VC judges. Understand both sides of the table in this nerve-wracking pitch competition."
+        "description": "Experience the investor's perspective in Be an Angel:Shark Tank Edition. Role-play as an Angel Investor with $5 million to invest. Assess startups, pitch investment strategies, and face VC judges. Understand both sides of the table in this nerve-wracking pitch competition.",
+        "imageUrl":"BAA_bg.jpg",
+        "link": "./competitions_pages/comp2.html"
+
+
+        
       },
       {
         "button": "crypto",
         "image": "CC.svg",
-        "description": "Get ready to ride the CryptoCraze wave, a thrilling virtual crypto trading competition where fortune favors the boldest! Seize control of your financial destiny and showcase your trading prowess. Dive into the undiscovered realms of the entrepreneurial world!"
+        "description": "Get ready to ride the CryptoCraze wave, a thrilling virtual crypto trading competition where fortune favors the boldest! Seize control of your financial destiny and showcase your trading prowess. Dive into the undiscovered realms of the entrepreneurial world!",
+        "imageUrl":"CC_bg.jpg",
+        "link": "./competitions_pages/comp3.html"
+
+
       },
       {
         "button": "MUC",
         "image": "MUC.svg",
-        "description": "Unlock the thrill of corporate leadership! Join Model United Corporations and immerse yourself in the world of CEOs, CMOs, and CFOs. Conquer high-pressure decision-making, strategic challenges, and teamwork. Sharpen your skills, seize the spotlight, and prove you've got what it takes to lead in the boardroom. Join the competition, transform into a corporate titan!"
+        "description": "Unlock the thrill of corporate leadership! Join Model United Corporations and immerse yourself in the world of CEOs, CMOs, and CFOs. Conquer high-pressure decision-making, strategic challenges, and teamwork. Sharpen your skills, seize the spotlight, and prove you've got what it takes to lead in the boardroom. Join the competition, transform into a corporate titan!",
+        "imageUrl":"MUC_bg.jpg",
+        "link": "./competitions_pages/comp4.html"
+
+
       },
       {
         "button": "Sell_Your_Sole",
         "image": "SYS.svg",
-        "description": "Prepare to unleash your marketing genius in the Sell Your Sole competition! Step into the shoes of a CMO and craft a game-changing marketing campaign for an existing brand. It's your chance to redefine success!"
+        "description": "Prepare to unleash your marketing genius in the Sell Your Sole competition! Step into the shoes of a CMO and craft a game-changing marketing campaign for an existing brand. It's your chance to redefine success!",
+        "imageUrl":"SYS_bg.jpg",
+        "link": "./competitions_pages/comp5.html"
+
+
       },
       {
         "button": "upstart_campus",
         "image": "UC.svg",
-        "description": "The classic pitching competition that showcases one's ability to ideate and pitch in front of judges from the across entrepreneurship world. Get the experience of being in the shoes of real life entrepreneur and learn what 'The Art of the Pitch' is all about."
+        "description": "The classic pitching competition that showcases one's ability to ideate and pitch in front of judges from the across entrepreneurship world. Get the experience of being in the shoes of real life entrepreneur and learn what 'The Art of the Pitch' is all about.",
+        "imageUrl":"UC_bg.jpg",
+        "link": "./competitions_pages/comp6.html"
+
+
       }
     ]
   }

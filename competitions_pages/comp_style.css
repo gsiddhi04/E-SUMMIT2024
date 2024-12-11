@@ -1,0 +1,429 @@
+/* Chrome, Edge and Safari */
+div::-webkit-scrollbar {
+    width: 5px;
+}
+
+div::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #282a7c00;
+}
+
+div::-webkit-scrollbar-track:hover {
+    background-color: #b8c0c200;
+}
+
+div::-webkit-scrollbar-track:active {
+    background-color: #80949900;
+}
+
+div::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #533c7989;
+}
+
+div::-webkit-scrollbar-thumb:hover {
+    background-color: #533c7989;
+}
+
+div::-webkit-scrollbar-thumb:active {
+    background-color: #533c7989;
+}
+
+.background-ellipse-1 {
+    position: absolute;
+    width: 330.172px;
+    height: 377.59px;
+    flex-shrink: 0;
+    border-radius: 377.59px;
+    opacity: 0.4;
+    background: radial-gradient(57.42% 57.42% at 50.00% 42.58%, rgba(135, 106, 250, 0.481) 0%, rgba(191, 175, 255, 0) 100%);
+    top: 200px;
+    left: 100px;
+    border-radius: 50% 22% 40% 80%;
+    filter: blur(100px);
+    background: radial-gradient(circle at 50% 50%, rgba(76, 0, 255, 1), rgba(76, 0, 255, 0));
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.background-ellipse-2 {
+    position: absolute;
+    width: 330.172px;
+    height: 377.59px;
+    flex-shrink: 0;
+    border-radius: 377.59px;
+    opacity: 0.4;
+    background: radial-gradient(ellipse at center, rgba(135, 106, 250, 0.2) 0%, transparent 50%, black 100%);
+    border-radius: 50% 22% 40% 80%;
+    filter: blur(100px);
+    background: radial-gradient(circle at 50% 50%, rgba(76, 0, 255, 1), rgba(76, 0, 255, 0));
+    opacity: 0.8;
+
+    top: 200px;
+    right: 100px;
+    z-index: -1;
+
+}
+
+.background-ellipse-3 {
+    position: absolute;
+    width: 330.172px;
+    height: 377.59px;
+    flex-shrink: 0;
+    border-radius: 377.59px;
+    border-radius: 50% 22% 40% 80%;
+    filter: blur(100px);
+    background: radial-gradient(circle at 50% 50%, rgb(162, 0, 255), rgba(76, 0, 255, 0));
+    opacity: 0.8;
+    top: 600px;
+    right: 10%;
+    z-index: -1;
+
+}
+
+.background-ellipse-4 {
+    position: absolute;
+    width: 330.172px;
+    height: 377.59px;
+    flex-shrink: 0;
+    border-radius: 377.59px;
+    border-radius: 50% 22% 40% 80%;
+    filter: blur(100px);
+    background: radial-gradient(circle at 50% 50%, rgba(162, 0, 255, 0.697), rgba(76, 0, 255, 0));
+    opacity: 0.8;
+    top: 800px;
+    left: 0%;
+    z-index: -1;
+
+}
+
+.comp-intro {
+    width: 100%;
+    margin: 10px auto;
+    height: 350px;
+    margin-top: 90px;
+    max-width: 1200px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.comp-intro-child {
+    height: 100%;
+    width: 100%;
+    background: url("./images/futuristic-sci-fi-space-tunnel-passageway-with-glowing-shiny-lights_181624-20241.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+
+#comp-intro-child-1{
+    height: 100%;
+    width: 100%;
+    background: url("./images/shubham-dhage-v0VjjYYFjOg-unsplash.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+#comp-intro-child-2{
+    height: 100%;
+    width: 100%;
+    background: url("./images/futuristic-sci-fi-space-tunnel-passageway-with-glowing-shiny-lights.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+#comp-intro-child-3{
+    height: 100%;
+    width: 100%;
+    background: url("./images/futuristic-sci-fi-space-tunnel-passageway-with-glowing-shiny-lights.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+#comp-intro-child-4{
+    height: 100%;
+    width: 100%;
+    background: url("./images/sellYourSole.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+#comp-intro-child-5{
+    height: 100%;
+    width: 100%;
+    background: url("./images/technology-green-lines-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+#comp-intro-child-6{
+    height: 100%;
+    width: 100%;
+    background: url("./images/cosmic-environment-with-colorful-neon-laser-lights.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+
+.comp-intro-child:hover {
+    transform: scale(1.2);
+}
+
+.comp-intro-left {
+    padding: 2.5%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.comp-intro img {
+    position: relative;
+    max-width: 400px;
+    z-index: 2;
+}
+
+.comp-brief-description {
+    max-width: 600px;
+    z-index: 2;
+    position: relative;
+}
+
+.comp-register-button {
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #866AFA;
+    text-align: left;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+    position: relative;
+    z-index: 2;
+    
+    transition: transform 0.2s ease-in-out;
+}
+
+.comp-register-button:hover{
+    transform: scale(1.1);
+}
+.comp-register-button img {
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+}
+
+@media screen and (max-width:800px) {
+    .comp-intro-left {
+        width: 100%;
+    }
+
+    .comp-intro img {
+        max-width: 300px;
+    }
+}
+
+
+.outline-vision-guidelines-outer {
+    position: relative;
+}
+
+.outline-vision-guidelines-outer {
+    position: relative;
+    margin: 10px auto;
+    max-width: 1200px;
+    margin-top: 90px;
+    height: 350px;
+    overflow: hidden;
+
+}
+
+.outline-vision-guidelines {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    position: relative;
+    overflow-x: hidden;
+
+    border: 2px solid white;
+    overflow-y: scroll;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+
+
+
+.knob {
+    position: absolute;
+    left: calc(0% - 410px / 2);
+    top: calc(50% - 410px / 2);
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+}
+
+.outline-vision-guidelines div {
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    right: 20px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.scroll-down{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 120px;
+        height: 40px;
+        /* border: 2px solid white; */
+        border-radius: 10px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+}
+
+.outline-vision-guidelines div h1{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    text-shadow: #FC0 1px 0 3px;
+}
+
+@media screen and (max-width:1000px) {
+    .outline-vision-guidelines div {
+        width: 100%;
+        right: 0;
+    }
+}
+
+.outline {
+    top: 100%;
+}
+
+.guidelines {
+    top: 200%;
+}
+
+
+/* tabs */
+.wrapper {
+    max-width: 1200px;
+    margin-inline: auto;
+    border: 2px solid white;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.channel-info {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.channel-info :not(h2) {
+    opacity: 0.8;
+}
+
+.channel-info__meta {
+    display: flex;
+    gap: 1rem;
+}
+
+.channel-info__img {
+    block-size: 8.5rem;
+    border-radius: 50%;
+}
+
+[role=tablist] {
+    position: relative;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-bottom: 1px solid #4d4d4d;
+    /* margin-block: 3rem; */
+}
+
+@media screen and (max-width:700px) {
+    [role=tablist] {
+        width: 100%;
+        overflow-x: scroll;
+    }
+}
+
+[role=tablist]::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4px;
+    scale: var(--_width, 0.32) 1;
+    translate: var(--_left, 0) 0;
+    transform-origin: left;
+    transition: scale 200ms, translate 200ms;
+    background: white;
+    overflow-x: scroll;
+}
+
+.tab-panels {
+    padding: 10px;
+    overflow-y: scroll;
+    max-height: 100%;
+}
+
+[role=tab] {
+    color: #fff;
+    background: lightblue;
+    background: transparent;
+    padding: 1em 2em;
+    border: 0;
+    font: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+[role=tab]:hover {
+    opacity: 1;
+}
+
+[role=tab][aria-selected=true] {
+    opacity: 1;
+}
+
+.comp-guidelines{
+    list-style-type: square;
+}

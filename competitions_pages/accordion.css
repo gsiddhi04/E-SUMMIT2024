@@ -1,0 +1,141 @@
+/* *,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.accordion-outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.accordion {
+  max-width: 1200px;
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.accordion__link {
+  cursor: pointer;
+  display: block;
+  padding: 15px 20px 15px 45px;
+  position: relative;
+  transition: all 0.4s ease;
+  width: 100%;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: #262e3e;
+  color: #ccd1dd;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.accordion__link:before, .accordion__link:after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 2px;
+  background: white;
+  transition: transform 0.4s ease;
+}
+.accordion__link:after {
+  transform: translateY(-50%) rotate(90deg);
+}
+.accordion__submenu {
+  background: #323846;
+  display: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.accordion__submenu-item {
+  padding: 10px;
+}
+.accordion__submenu-link {
+  color: #ccd1dd;
+}
+
+.is-open .accordion__link:after {
+  transform: translateY(-50%) rotate(0deg);
+} */
+.accordion-list{
+  box-sizing: border-box;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.accordion-list h1{
+  text-align: center;
+}
+ul.accordion-list {
+  position: relative;
+  display: block;
+  height: auto;
+  /* padding: 20px; */
+  list-style: none;
+  background-color: transparent;
+}
+ul.accordion-list li {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  padding: 20px;
+  margin: 0 auto 15px auto;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ul.accordion-list li.active h3:after {
+  transform: rotate(45deg);
+}
+ul.accordion-list li h3 {
+  font-weight: 700;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0 0 0 0;
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+}
+ul.accordion-list li h3:after {
+  content: "";
+  font-family: "material-design-iconic-font";
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #Fcc110;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+}
+ul.accordion-list li div.answer {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+ul.accordion-list li div.answer p {
+  position: relative;
+  display: block;
+  font-weight: 300;
+  padding: 10px 0 0 0;
+  cursor: pointer;
+  line-height: 150%;
+  margin: 0 0 15px 0;
+  font-size: 14px;
+}

@@ -1,0 +1,150 @@
+.train{
+    width: 100%;
+    height:100px ;
+    position: relative;
+    /* z-index: 500; */
+    top: 0%;
+    overflow-x: hidden;
+  }
+  
+
+  .train {
+    overflow: scroll; /* Enable scrolling functionality */
+    scrollbar-width: none; /* For Firefox */
+}
+
+/* For Webkit browsers like Chrome, Safari */
+.train::-webkit-scrollbar {
+    display: none;
+}
+  /* .train1-container{
+    height: 2rem;
+    width: 500px;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('./train.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: moveRight1 5s linear infinite;
+    animation-delay: 5s; 
+
+
+
+  }*/
+  /* .train2-container{
+    height: 100%;
+    width: 500px;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    left: 80%;
+    background-image: url('./train.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: moveRight2 5s linear infinite;
+  } */
+
+  .train1-cover{
+    /* z-index: 1000; */
+    height: 100px;
+    width: 50%;
+    /* background-color: rgba(0, 255, 255, 0.447); */
+    position: absolute;
+    /* top: -10%; */
+    right: 0;
+    overflow-x: hidden;
+    object-fit: cover;
+}
+.train1-cover {
+  overflow: scroll; /* Enable scrolling functionality */
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* For Webkit browsers like Chrome, Safari */
+.train1-cover::-webkit-scrollbar {
+  display: none;
+}
+
+.train1-cover img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width: 100%;
+  transform: scale(5);
+  animation: moveRight1 5s  linear infinite;
+  animation-delay: 2s;
+
+  
+}
+.train2-cover{
+  height: 100px;
+  width: 50%;
+    height: 100%;
+    top: 0%;
+    /* background-color: rgba(0, 255, 255, 0.377); */
+    position: absolute;
+    left: 0;
+    overflow-x: hidden;
+    object-fit: cover;
+}
+
+
+.train2-cover {
+  overflow: scroll; /* Enable scrolling functionality */
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* For Webkit browsers like Chrome, Safari */
+.train2-cover::-webkit-scrollbar {
+  display: none;
+}
+.train2-cover img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width: 100%;
+  transform: scale(5);
+  animation: moveRight2 5s  linear infinite;
+
+}
+  @keyframes moveRight1 {
+    0% {
+        left: -100vw; 
+    }
+    100% {
+        left: 100vw;
+    }
+}
+@keyframes moveRight2 {
+    0% {
+        left: -500px; 
+    }
+    100% {
+        left: 50vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+  .train{
+    width: 100%;
+    height:100px ;
+    position: relative;
+    /* z-index: 500; */
+    top: 0%;
+    overflow-x: hidden;
+  }
+  .train1-cover img{
+    transform: scale(2);
+  }
+  .train2-cover img{
+    transform: scale(2);
+  
+  }
+  
+}
