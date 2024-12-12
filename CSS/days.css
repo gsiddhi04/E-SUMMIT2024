@@ -1,15 +1,13 @@
      /* Parent container */
-     .days{
+    .days{
         display: grid;
         grid-template-columns: 1fr 1fr;
         position: absolute;
         z-index: 2000;
         top: 70%; 
-        left: 10%;  
-
-
-     }
-     .days_parent {
+        /* left: 10%;   */
+      }
+    .days_parent {
         display: flex; 
         justify-content: center;   
         justify-content: space-evenly;
@@ -115,8 +113,8 @@
           position: fixed;
           z-index: 2000;
           top: 50%; 
-          left: 90%;  
-  
+          right: 10px;  
+          border: 1px solid red;
   
        }
        .days_parent {
@@ -141,9 +139,7 @@
           transition: transform 0.3s;  
           font-size: 1rem;
           font-weight: 900;
-         
         }
-        
         .days_child{
           color: white;
           display: flex;

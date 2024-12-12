@@ -1,3 +1,6 @@
+#events{
+  background: rgba(0, 0, 0, 0.37); }  
+
      /* Parent container */
      .parent {
         display: flex;                /* Arrange child boxes in a row */        justify-content: center;      /* Center the child boxes horizontally */
@@ -27,13 +30,11 @@
         background-color: #320B3D;
         box-shadow: 0 0 20px #D519A6b3; 
         font-size: 1rem;
-
-        
-       }
+      }
       
-   
 
-       @keyframes rotate {
+
+      @keyframes rotate {
         from {
           transform: rotate(360deg);
         }
@@ -42,7 +43,7 @@
         }
       }
 
-         .child::before {
+        .child::before {
       content: '';
       position: absolute;
       top: 0;
@@ -75,11 +76,12 @@
     .child_count.child1::after, .child_count.child3::after, .child_count.child2::after {
       content: attr(text-target) ;
       position: absolute;
-       bottom: -40px;
-      left: 50%; transform: translateX(-50%);
-      padding: 5px;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0.75;
       border-radius: 5px;
-       font-size: 1.5rem;
+      font-size: 1.5rem;
       color: white; }
       
       /* Hover effect */

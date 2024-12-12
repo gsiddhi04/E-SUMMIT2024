@@ -6,16 +6,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /* Global Styles */
+
+
+/* Webfont: Kompagnia-Regular */
+
+@font-face {
+    font-family: 'Kompagnia';
+    src: url('../Font/Kompagnia.woff2') format('woff2'), /* Modern Browsers */
+         url('../Font/Kompagnia.woff') format('woff'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
 
 :root{
       /* Font Families */
-  --font-primary1: "Playfair Display SC", serif; /* Primary font for most content */
-  --font-primary2:"Oswald", sans-serif;  /* Primary font for most content */
+  --font-primary2: "Inter", sans-serif;  /* Primary font for most content */
   --font-primary3:"Cinzel", serif;  /* Primary font for most content */
-  --font-primary3:"Poppins", sans-serif;
-  ;  /* Primary font for most content */
+    --font-primary3:"Poppins", sans-serif;
+    --primary-text1: 'Kompagnia';
 
+  ;  /* Primary font for most content */
+  --font-secondary1:"Open Sans", sans-serif;
   --font-secondary: 'Lora', serif;     /* Secondary font for headings or accents */
   --font-monospace: 'Courier New', monospace; /* Monospace font for code snippets */
 
@@ -35,10 +51,12 @@
   --font-weight-bold: 700;     /* Bold text */
   --font-weight-extra-bold: 900; /* Extra-bold text */
 
+
   /* Line Heights */
   --line-height-tight: 1.2;    /* Tight spacing */
   --line-height-normal: 1.5;   /* Default line spacing */
   --line-height-loose: 1.75;   /* Loose spacing */
+
 
   /* Letter Spacing */
   --letter-spacing-tight: -0.02em; /* Slightly condensed */
@@ -110,7 +128,7 @@ h4{
     margin-bottom:1rem;
 }
 h1{
-    font-size: var(--font-size-large);
+    font-size: var(--primary-text1);
     font-weight: var(--font-weight-medium);
     font-family: var(--font-primary1);
     color: var(--clr-grey-1);
@@ -129,6 +147,7 @@ h4{
     font-size: 0.875rem;
 }
 p{
+    font-family: var( --font-secondary1);
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-regular);
     color: var(--clr-grey-1);
@@ -137,9 +156,9 @@ p{
     
     h1{
         font-size: var(--font-size-xxl);
-        font-weight: var(--font-weight-extra-bold);
+        font-weight: var(--font-weight-regular);
         color: var(--clr-grey-1);
-        font-family: var(--font-primary1);
+        font-family: var(--primary-text1);
 
     }
     h2{
@@ -166,10 +185,29 @@ p{
         font-size: var(--font-size-base);
     font-weight: var(--font-weight-regular);
     color: var(--clr-grey-1);
+    font-family: var( --font-secondary1);
 
     }
     
 }
+/* 
+==========
+nav bar
+==========
+ */
+nav ul li a{
+    font-size: 1.125rem;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
 /* more Global Css */
 #fixed_section {
     position: fixed; /* Becomes sticky when it reaches the top */
@@ -256,6 +294,13 @@ Animation
     50% {transform: scale(2);opacity: 0.5;}
     100% {transform: scale(1); opacity: 1;}
 }
+
+
+
+
+
+
+
 /* 
 ==========
 landing extention

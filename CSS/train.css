@@ -97,6 +97,7 @@
 .train2-cover {
   overflow: scroll; /* Enable scrolling functionality */
   scrollbar-width: none; /* For Firefox */
+  object-fit: contain;
 }
 
 /* For Webkit browsers like Chrome, Safari */

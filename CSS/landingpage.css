@@ -57,6 +57,7 @@ landing_page
     position: absolute;
     width: 40%;
     height:50%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -122,8 +123,8 @@ landing_page
         /* transform: scaleY(4); */
     }
     .typeface-packet{
-        width: 90%;
-        top: 10%;
+        width: 50%;
+        top: 25%;
         /* height:50%; */
     }
     .typeface {
