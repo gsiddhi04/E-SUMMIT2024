@@ -40,13 +40,14 @@
       </a>            
       <div class="d-flex">
             <!-- Navbar Toggler -->
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+          
             <!-- Register Now Button - Hidden on large screens -->
             <button class="btn btn-primary ms-2 border rounded-5 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarRegister" aria-controls="navbarRegister" aria-expanded="false" aria-label="Toggle Register" style="background: linear-gradient(90deg, #F532EE 0%, #8F1D8B 100%);width: 155px; width: 180px;">
                <a href="#" class="text-white" style="text-decoration: none;" >Register Now</a> 
             </button>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+              <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
         <!-- Collapsible Menu -->
         <div class="collapse navbar-collapse" id="navbarNav" >
@@ -188,23 +189,26 @@
     <!-- services -->
     <section id="service" class="service section">
       <h1>About Us</h1>
-       <div class="card_container">
+      <div class="card_container">
         <div class="service_card card1">
+          
+          <p class="card_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam eum, saepe odit qui cupiditate fuga laborum quisquam veniam rem minima.</p>
+        </div>
+      </div>
+      <div class="card_container">
+        <div class="service_card card2">
+          <p class="card_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam eum, saepe odit qui cupiditate fuga laborum quisquam veniam rem minima.</p>
 
         </div>
-       </div>
       </div>
       <div class="card_container">
-        <div class="service_card card2"></div>
+        <div class="service_card card3">
+          <p class="card_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam eum, saepe odit qui cupiditate fuga laborum quisquam veniam rem minima.</p>
 
-       </div>
-      </div>
-      <div class="card_container">
-        <div class="service_card card3  "></div>
-
-       </div>
+        </div>
       </div>
     </section>
+    
 
     <!-- <section id="services" class="services section">
         <div class="container" style=" background-color: white;">
@@ -275,7 +279,7 @@
      <section id="workshops"> <!-- TODO -->
         <h1>Workshops</h1>
       <div class="container"  >
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque magnam vero vitae. Voluptatem, repudiandae quaerat? Mollitia hic suscipit quia est architecto, veritatis id eius quibusdam reprehenderit consectetur quae fuga cumque in delectus non eveniet reiciendis perspiciatis autem deserunt, corporis numquam. Dolore, iusto. Atque, sed quidem? Eos ipsum blanditiis quas esse.</p>
+        <p style="color: white; z-index: 2; position: relative;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque magnam vero vitae. Voluptatem, repudiandae quaerat? Mollitia hic suscipit quia est architecto, veritatis id eius quibusdam reprehenderit consectetur quae fuga cumque in delectus non eveniet reiciendis perspiciatis autem deserunt, corporis numquam. Dolore, iusto. Atque, sed quidem? Eos ipsum blanditiis quas esse.</p>
         <div class="carousel" >
           <div class="carousel-container" style="--quantity : 11;">
             
@@ -487,7 +491,7 @@
     <!-- Gsap Animation -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="./JS/gsap_animation.js"></script>
+    <script src="./gsap/gsap_animation.js"></script>
     <script src="./gsap/services.js"></script>
 </body>
 </html>

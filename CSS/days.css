@@ -1,10 +1,11 @@
      /* Parent container */
     .days{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         position: absolute;
         z-index: 2000;
         top: 70%; 
+
         /* left: 10%;   */
       }
     .days_parent {
@@ -15,7 +16,7 @@
         gap: 20px;                     
         flex-wrap: wrap;             
         position: relative;
-        left: 40%;
+
       }
       
       /* Child circles */
@@ -28,23 +29,15 @@
         transition: transform 0.3s;  
         font-size: 1rem;
         font-weight: 900;
-       
-      }
-      
-      .days_child{
         color: white;
         display: flex;
         text-align: center;
         align-items: center;
         background-color: transparent; 
         position: relative; 
-
-
+       
       }
-
-
-      
-      .days_child::before {
+    .days_child::before {
   content: '';
   position: absolute;
   top: 0;
@@ -79,13 +72,13 @@
 
 .days_child1::after,.days_child2::after,.days_child3::after {
   content: attr(days-target) ;
-  position: absolute; /* Positions it relative to .days_child */
-  bottom: -20px; /* Adjusts the position below the div */
-  left: 50%; /* Centers the text horizontally */
-  transform: translateX(-50%); /* Corrects alignment */
-  font-size: 0.8rem; /* Adjusts font size for "days" */
-  font-weight: normal; /* Optional: set font weight for the pseudo-element */
-  color: #fefefe; /* Adjust the color as needed */
+  position: absolute; 
+  bottom: -20px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  font-size: 0.8rem; 
+  font-weight: normal; 
+  color: #fefefe;
 }
 
       
@@ -97,24 +90,18 @@
       
 
       .days_text{
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-        color: white;
-        display: flex;
-        justify-content: center;
-        padding: 0;
+        display: none;
         
-        text-align:right;
          }
       @media screen and (min-width: 446px) {
+        
         .days{
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr 0.25fr;
           position: fixed;
           z-index: 2000;
           top: 50%; 
-          right: 10px;  
-          border: 1px solid red;
+          right: 0px;  
   
        }
        .days_parent {
@@ -126,7 +113,7 @@
           gap: 20px;                     
           flex-wrap: wrap;             
           position: relative;
-          left: 40%;
+
         }
         
         /* Child circles */
@@ -147,8 +134,14 @@
           align-items: center;
           background-color: transparent; 
           position: relative; 
-  
-  
         }
+        .days_text{
+          writing-mode: vertical-rl;
+          text-orientation: upright;
+          color: white;
+          display: flex;
+          justify-content: center;  
+          text-align:right;
+           }
         
       }

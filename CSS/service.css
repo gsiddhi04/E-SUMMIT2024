@@ -1,42 +1,95 @@
-#service{
+
+
+
+/* General Styling */
+#service {
     background-color: white;
     position: relative;
-}
-#service h1{
+    padding: 2rem 1rem;
+    background-image: url('../images/about_bg.jpg');
+  }
+  
+  #service h1 {
     color: black;
-}
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .service_card {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    /* transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out; */
+  }
+  
+  .card1 {
+    background-image: url("../images/About_1.svg");
+  }
+  
+  .card2 {
+    background-image: url("../images/About_1.svg");
+  }
+  
+  .card3 {
+    background-image: url("../images/About_1.svg");
+  }
+  
 
 
-.card_container{
-  width: 100vw;
-  height: 100vh;
-  background-color:white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  .card_text {
+    opacity: 0;
+    /* transform: translateY(20px); */
+    /* transition: opacity 0.3s, transform 0.3s; */
 }
 
-    .card_container .card1, .card2, .card3{
-        background-image: url("../images/About_1.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-    }
-@media screen and (max-width:776px) {
-    .card_container{
-      width: 100vw;
-      height: fit-content;
-      background-color:white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-    .card_container .service_card{
-        width: 100%;
-        height: 400px;
-       
-    }
-    
+.card:hover,.card_text{
+    opacity: 1;
 }
+
+  @media screen and (max-width: 776px) {
+    .card_container {
+      height: auto;
+      padding: 0.25rem 0;
+    }
+  
+    .service_card {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      width: 90%;
+      height: 400px;
+      background-size: contain;
+      padding: 1rem;
+      text-align: left;
+    }
+    .service_card p{
+
+    }
+  }
+  
+
+  /*
+  =========
+   Rotate
+  ==========
+   */
+
+   
