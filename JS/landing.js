@@ -1,34 +1,39 @@
-// Include GSAP via CDN in your HTML file
-// <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-// <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-// Ensure the DOM is fully loaded before executing the script
 document.addEventListener("DOMContentLoaded", () => {
-    // Register the GSAP ScrollTrigger plugin
-    gsap.registerPlugin(ScrollTrigger);
-  
-    // Target the landing page section and scroll-slide container
     const landingPage = document.querySelector("#landing_page");
     const scrollSlide = document.querySelector("#scroll-slide");
-  
+    const images_section = document.querySelector(".images-section");
+
     // Apply perspective to the parent container
-    scrollSlide.style.perspective = "1000px";
-  
-    // Create scroll-triggered animation
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: landingPage,
-        start: "bottom 70%",
-        end: "+=500", 
-        scrub: true, 
-      },
-    })
-      .to(landingPage, {
-        rotationX: 15, 
-        rotationY:-3,
-        transformOrigin: "center bottom",
-        ease: "power1.out", 
-      })
-   
-  });
-  
+    scrollSlide.style.perspective = "2000px";
+
+    // Listen for scroll events
+    window.addEventListener("scroll", () => {
+        // Get the bounding rectangle of the landing page
+        const rect = landingPage.getBoundingClientRect();
+
+        // Calculate the viewport height and the element's position
+        const viewportHeight = window.innerHeight;
+        console.log(viewportHeight);
+        const elementBottom = rect.bottom - 100;
+        console.log(elementBottom);
+
+        // Check if the bottom of the landing page is within the viewport
+        if (elementBottom < viewportHeight && elementBottom > 0) {
+            // Calculate rotation based on the scroll position
+            const progress = 1 - elementBottom / viewportHeight; // Normalize scroll progress (0 to 1)
+            const rotationX = 20 * progress; // Maximum tilt of 20 degrees
+            const moveY = 10 * progress;
+
+            // Apply transformations
+            landingPage.style.transform = `rotateX(${rotationX}deg) translateY(${moveY}px)`;
+            landingPage.style.transformOrigin = "center bottom";
+
+            // Reset any transformations applied to images_section
+            images_section.style.transform = `rotate(0deg)`;
+        } else {
+            // Reset transformations when out of range
+            landingPage.style.transform = "rotateX(0deg)";
+            landingPage.style.transformOrigin = "center bottom"; // Ensuring transform origin is always set
+        }
+    });
+});
